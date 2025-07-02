@@ -1,55 +1,64 @@
-# Real-Estate-Search-Platform-Template
-A VivaReal-inspired property listing site with search/filters, admin dashboard, and responsive UI. Built with PHP, MySQL, jQuery, and Tailwind CSS. Features fuzzy search (Fuse.js) and email notifications.
+# 🏠 Real Estate Search Platform  
 
-Real Estate Search Platform (VivaReal Clone)
+A VivaReal-inspired property listing system with admin dashboard and advanced search functionality, developed as an academic project.
 
-A full-stack web application inspired by VivaReal.com.br. This platform allows users to search, filter, and view property listings, while admins can manage properties through a custom dashboard.
+## ✨ Features  
 
-Key Features:
+- 🔍 Property search with filters (type, price, location)  
+- 📱 Responsive UI with Tailwind CSS  
+- ⚡ Instant search using Fuse.js  
+- 🔐 Complete admin dashboard  
+- ✉️ Email contact system  
 
-    🏠 Property search with filters (type, price, location)
+## 🛠️ Tech Stack  
 
-    📱 Responsive UI with Tailwind CSS
+**Frontend:**  
+- HTML5 + CSS3  
+- Tailwind CSS  
+- jQuery  
+- Fuse.js (fuzzy search)  
 
-    🔍 Client-side fuzzy search using Fuse.js
+**Backend:**  
+- PHP  
+- MySQL  
 
-    🔐 Admin panel for property management
+## 📂 Project Structure  
 
-    📧 Contact form with SMTP email integration
+```
+public_html/
+├── index.html                 (Main homepage)
+├── config.php                 (Database configuration)
+├── database.sql               (Database schema)
+├── admin/
+│   ├── index.php              (Admin dashboard)
+│   ├── login.php              (Admin login)
+│   └── auth.php               (Authentication)
+├── api/
+│   └── imoveis.php           (Properties API)
+├── css/
+│   └── style.css             (Custom CSS)
+└── js/
+    └── app.js                (Custom JavaScript)
+```
 
-Tech Stack:
+## 🚀 Setup Instructions  
 
-    Frontend: HTML5, Tailwind CSS, jQuery
+1. Clone repository:
+```bash
+git clone [your-repo-url]
+```
 
-    Backend: PHP (HostGator compatible)
+2. Import database:
+```bash
+mysql -u [username] -p [database_name] < database.sql
+```
 
-    Database: MySQL
+3. Configure:
+- Update `config.php` with your DB credentials
+- Set up SMTP in PHP mail() function
 
-    Search: Fuse.js for client-side fuzzy search
+## 📝 License  
 
-    Hosting: Shared Hosting (HostGator Brazil)
+MIT License - See [LICENSE](LICENSE) file.
 
-Academic Focus: Developed as a college project for Information Systems course, demonstrating full-stack development skills within constrained hosting environments.. This platform allows users to search, filter, and view property listings, while admins can manage properties through a custom dashboard.
-
-Key Features:
-
-    🏠 Property search with filters (type, price, location)
-
-    📱 Responsive UI with Tailwind CSS
-
-    🔍 Client-side fuzzy search using Fuse.js
-
-    🔐 Admin panel for property management
-
-    📧 Contact form with SMTP email integration
-
-Tech Stack:
-
-    Frontend: HTML5, Tailwind CSS, jQuery
-
-    Backend: PHP (HostGator compatible)
-
-    Database: MySQL
-
-    Search: Fuse.js for client-side fuzzy search
-
+> **Note:** Academic project developed for educational purposes. Not for commercial use.
