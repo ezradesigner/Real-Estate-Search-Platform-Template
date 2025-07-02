@@ -1,23 +1,21 @@
 <?php
-// config.php - Configurações do banco de dados
 
 // Configurações do banco de dados HostGator
-define('DB_HOST', 'localhost'); // ou o host fornecido pela HostGator
-define('DB_NAME', 'brun3293_oohmedia'); // nome do banco
-define('DB_USER', 'brun3293_admin'); // usuário do banco
-define('DB_PASS', 'mz9*~nllPvh8'); // senha do banco
+define('DB_HOST', 'localhost');
+define('DB_NAME', ''); // nome do banco
+define('DB_USER', ''); // usuário do banco
+define('DB_PASS', ''); // senha do banco
 
 // Configurações do site
-define('SITE_URL', 'https://teste.maybumaquinasagricolas.com.br');
+define('SITE_URL', '');
 define('SITE_NAME', 'Portal Imobiliário');
 
 // Configurações de email SMTP HostGator
-define('SMTP_HOST', 'mail.maybumaquinasagricolas.com.br');
+define('SMTP_HOST', '');
 define('SMTP_PORT', 587);
-define('SMTP_USER', 'contato@maybumaquinasagricolas.com.br');
-define('SMTP_PASS', 'sua_senha_email');
+define('SMTP_USER', '');
+define('SMTP_PASS', '');
 
-// Função para conectar ao banco
 function conectarBanco() {
     try {
         $pdo = new PDO(
