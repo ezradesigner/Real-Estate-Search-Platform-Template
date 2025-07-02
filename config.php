@@ -1,6 +1,6 @@
 <?php
 
-// Configurações do banco de dados HostGator
+// Configurações do banco de dados
 define('DB_HOST', 'localhost');
 define('DB_NAME', ''); // nome do banco
 define('DB_USER', ''); // usuário do banco
